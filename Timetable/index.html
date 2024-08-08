@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Table</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Diphylleia&family=Gupter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="container">Internet and Web Programming Lab-3 (06-08-2024)</header>
+    <section id="q1" class="container">
+        <h4><b>Q1.</b> Design Time Table & Display in Tabular Form by using CSS</h4>
+        <h3>Time Table</h3>
+        <table>
+            <caption>Department of Computer Science and Engineering, VSSUT, Burla</caption>
+            <tr>
+                <th>TIME:</th>
+                <th>9:00a.m. - 10:00a.m.</th>
+                <th>10:00a.m. - 11:00a.m.</th>
+                <th>11:00a.m. - 12:00p.m.</th>
+                <th>12:00p.m. - 1:00p.m.</th>
+                <th>1:00p.m. - 2:00p.m.</th>
+                <th>2:00p.m. - 3:00p.m.</th>
+                <th>3:00p.m. - 4:00p.m.</th>
+                <th>4:00p.m. - 5:00p.m.</th>
+            </tr>
+            <tr>
+                <td rowspan="2" class="day odd">MONDAY</td>
+                <td rowspan="2">-</td>
+                <td rowspan="2">-</td>
+                <td colspan="2">Seminar (SK) [CS-209]</td>
+                <td rowspan="17">LUNCH BREAK</td>
+                <td rowspan="2">-</td>
+                <td>PDC (SS)</td>
+                <td>AI (PKD)</td>
+            </tr>
+            <tr>
+                <td colspan="2">-</td>
+                <td>D-303</td>
+                <td>D-303</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="2" class="day">TUESDAY</td>
+                <td>AI (PKD)</td>
+                <td>IWP (SKB)</td>
+                <td colspan="2">IWP (SKB, GF) [CS-208]</td>
+                <td rowspan="2">-</td>
+                <td colspan="2">Project-I (All Faculties)</td>
+            </tr>
+            <tr>
+                <td>D-303</td>
+                <td>D-303</td>
+                <td colspan="2">Project-I (All Faculties)</td>
+                <td colspan="2">IWP (SKB, GF) [CS-208]</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="2" class="day odd">WEDNESDAY</td>
+                <td>IWP (SKB)</td>
+                <td>AI (PKD)</td>
+                <td colspan="2">PDC (SS)</td>
+                <td rowspan="2">-</td>
+                <td rowspan="2">-</td>
+                <td rowspan="2">-</td>
+            </tr>
+            <tr>
+                <td>D-303</td>
+                <td>D-303</td>
+                <td colspan="2">D-303</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="2" class="day">THURSDAY</td>
+                <td colspan="2">-</td>
+                <td>OE</td>
+                <td rowspan="2">-</td>
+                <td rowspan="2">-</td>
+                <td>PDC (SS)</td>
+                <td>IWP (SKB)</td>
+            </tr>
+            <tr>
+                <td colspan="2">Seminar (AD) [CS-209]</td>
+                <td>D-303</td>
+                <td>D-303</td>
+                <td>D-303</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="2" class="day odd">FRIDAY</td>
+                <td rowspan="2">-</td>
+                <td rowspan="2">-</td>
+                <td>OE</td>
+                <td rowspan="2">-</td>
+                <td rowspan="2">-</td>
+                <td rowspan="2">-</td>
+                <td rowspan="2">-</td>
+            </tr>
+            <tr>
+                <td>D-303</td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td rowspan="2" class="day">SATURDAY</td>
+                <td>AI (PKD)</td>
+                <td>IWP (SKB)</td>
+                <td>OE</td>
+                <td rowspan="2">-</td>
+            </tr>
+            <tr>
+                <td>D-303</td>
+                <td>D-303</td>
+                <td>D-303</td>
+            </tr>
+        </table>
+    </section>
+    <section id="q2" class="container">
+        <h4><b>Q2.</b> Design a Registration Form & Style it using CSS/h4>
+            <h3>Registration Form</h3>
+            <iframe src="http://localhost:5501/" frameborder="0" width="100%" height="800px"></iframe>
+        </section>
+    <section id="q2a" class="container">
+        <h4><b>Q2a.</b> Redesign a Registration Form & Style it using CSS</h4>
+        <h3>Registration Form</h3>
+        <div class="form-cover">
+            <div class="form-col">
+                <form>
+                    <div class="form-element">
+                        <label for="Name">Full Name</label>
+                        <input type="text" name="Name" id="Name" placeholder="e.g.: Jibesh Kumar Panda">
+                    </div>
+                    <div class="form-element">
+                        <label for="Age">Age</label>
+                        <input type="number" name="Age" id="Age" placeholder="e.g.: 20">
+                    </div>
+                    <div class="form-element">
+                        <label for="Regd">Registration Number</label>
+                        <input type="number" name="Regd" id="Regd" placeholder="e.g.: 2102040024">
+                    </div>
+                    <div class="form-element">
+                        <label for="DOB">Date of Birth</label>
+                        <input type="date" name="DOB" id="DOB">
+                    </div>
+                    <div class="form-element">
+                        <label for="CGPA">CGPA</label>
+                        <input type="number" name="CGPA" id="CGPA" placeholder="e.g.: 9.93">
+                    </div>
+                    <button class="submit">Submit</button>
+                </form>
+            </div>
+            <div class="form-col">
+                <h2>Student Details</h2>
+                <img src="Logo_vssut.svg" alt="VSSUT">
+                <h4>School of Computer Sciences<br>Veer Surendra Sai University of Technology, Burla</h4>
+            </div>
+        </div>
+    </section>
+    <footer class="container">CopyRight ©️ <a href="https://github.com/Jibesh04">Jibesh04</a></footer>
+</body>
+</html>
